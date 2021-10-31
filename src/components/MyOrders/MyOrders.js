@@ -16,7 +16,7 @@ const MyOrders = () => {
             })
             .catch(err => {
                 throw new Error(err)
-              })
+            })
         // return () => {
         //     setOrders([]); // This worked for me
         //   };
@@ -69,8 +69,8 @@ const MyOrders = () => {
                                     <p>
                                         <span className="fw-bold">Phone:</span> {order?.phone}
                                     </p>
-                                    <Button className="btn-danger" 
-                                    onClick={() => handleDelete(order?._id)}>Delete</Button>
+                                    <Button className="btn-danger"
+                                        onClick={() => handleDelete(order?._id)}>Delete</Button>
                                 </Card.Body>
                             </Card>
                         </Col>))

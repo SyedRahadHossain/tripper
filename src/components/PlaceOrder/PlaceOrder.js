@@ -65,17 +65,17 @@ const PlaceOrder = () => {
                 </div>
                 <div className="col-md-6">
                     <h3 className="text-success mb-4">Place your order</h3>
-                    <form className="d-flex flex-column align-items-center " onSubmit={handleSubmit(onSubmit)}>
+                    <form className="d-flex flex-column align-items-center bg-light pt-5" onSubmit={handleSubmit(onSubmit)}>
 
-                        {pkg.name && <input className="mb-2 w-75" defaultValue={pkg.name} {...register("packageName")} />}
+                        {pkg.name && <input className="mb-3 w-75" defaultValue={pkg.name} {...register("packageName")} />}
 
-                        <input className="mb-2 w-75" defaultValue={user.displayName} {...register("name")} />
+                        <input className="mb-3 w-75" defaultValue={user.displayName} {...register("name")} />
 
-                        <input className="mb-2 w-75 " defaultValue={user.email} {...register("email", { required: true })} />
+                        <input className="mb-3 w-75 " defaultValue={user.email} {...register("email", { required: true })} />
                         {errors.email && <span className="error">This field is required</span>}
-                        <input className="mb-2 w-75" placeholder="Address" defaultValue="" {...register("address")} />
-                        <input className="mb-2 w-75" placeholder="City" defaultValue="" {...register("city")} />
-                        <input className="mb-2 w-75" placeholder="Phone Number" defaultValue="" {...register("phone")} />
+                        <input className="mb-3 w-75" placeholder="Address" defaultValue="" {...register("address")} />
+                        <input className="mb-3 w-75" placeholder="City" defaultValue="" {...register("city")} />
+                        <input className="mb-3 w-75" placeholder="Phone Number" defaultValue="" {...register("phone")} />
 
                         <input className="btn btn-success mb-5 w-50" type="submit" />
                     </form>

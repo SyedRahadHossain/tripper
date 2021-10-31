@@ -10,7 +10,7 @@ const Footer = () => {
                         <div className="col-md-6">
                             <div className="d-flex justify-content-center align-content-center">
                                 <h3 className="text-white text-start">
-                                    Tripper
+                                <i className="fas fa-plane-departure"></i> Tripper
                                     <br />
                                     <span className="fs-6">
                                         Best travel agency   <br />

@@ -51,7 +51,7 @@ const ManageAllOrders = () => {
                         <Card
                             border="success"
                             style={{ width: '18rem' }}>
-                            <Card.Header>{order?.name}</Card.Header>
+                            <Card.Header className="fw-bold">{order?.name}</Card.Header>
                             <Card.Body>
                                 <Card.Title>{order?.packageName}</Card.Title>
                                 <p>

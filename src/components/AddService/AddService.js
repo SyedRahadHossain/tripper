@@ -27,8 +27,8 @@ const AddService = () => {
                     <img className="img-fluid" src={addPackage} alt="" />
                 </div>
                 <div className="col-md-6">
-                    <h3 className="m-4">Please Fill This Form</h3>
-                    <form className="d-flex flex-column justify-content-center align-items-center" onSubmit={handleSubmit(onSubmit)}>
+                    <h3 className="m-4 text-success">Please Fill This Form</h3>
+                    <form className="d-flex flex-column justify-content-center align-items-center bg-light pt-5" onSubmit={handleSubmit(onSubmit)}>
                         <input className="w-75 mb-2" {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                         <textarea className="w-75 mb-2" {...register("description")} placeholder="Description" />
                         <input className="w-75 mb-2" type="number" {...register("price")} placeholder="Price" />

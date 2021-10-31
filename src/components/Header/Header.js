@@ -18,7 +18,7 @@ const Header = () => {
             >
                 <Container>
                     <Navbar.Brand className="fs-3" as={HashLink} to="/home#home">
-                        Tripper
+                    <i className="fas fa-plane-departure"></i> Tripper
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
