@@ -6,11 +6,11 @@ import addPackage from '../../images/add-package.png'
 const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        console.log(data);
+        // console.log(data);
 
         axios.post('https://ghostly-shadow-66375.herokuapp.com/packages', data)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 if (res.data.insertedId) {
                     alert('added successfully');
                     reset();

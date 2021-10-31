@@ -15,7 +15,7 @@ const Packages = () => {
             .then((res) => res.json())
             .then((data) => {
                 setPackages(data);
-                console.log(data)
+                // console.log(data)
             })
             .catch(err => {
                 throw new Error(err)

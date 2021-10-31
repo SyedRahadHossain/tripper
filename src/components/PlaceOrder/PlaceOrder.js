@@ -18,7 +18,7 @@ const PlaceOrder = () => {
             .then((res) => res.json())
             .then((data) => {
                 setPkg(data);
-                console.log(data);
+                // console.log(data);
             })
             .catch(err => {
                 throw new Error(err)
@@ -26,10 +26,8 @@ const PlaceOrder = () => {
     }, [packageId]);
 
     const onSubmit = data => {
-        console.log(data);
-        // const savedCart = getStoredCart();
-        // data.order = savedCart;
-
+        // console.log(data);
+        
         fetch('https://ghostly-shadow-66375.herokuapp.com/orders', {
             method: 'POST',
             headers: {
@@ -39,7 +37,7 @@ const PlaceOrder = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                // console.log(result);
                 if (result.insertedId) {
                     alert('Order processed Successfully');
                     reset();
