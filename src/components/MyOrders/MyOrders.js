@@ -20,7 +20,7 @@ const MyOrders = () => {
         // return () => {
         //     setOrders([]); // This worked for me
         //   };
-    });
+    }, [user?.email]);
 
     // console.log(orders);
     const handleDelete = id => {
