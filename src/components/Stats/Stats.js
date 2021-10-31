@@ -42,6 +42,24 @@ const Stats = () => {
                     </Card>
                 </CardGroup>
             </div>
+            <div className="row my-5 shadow py-3">
+                <div className="col-md-4">
+                    <h1><i className="far fa-smile-beam"></i>
+                    </h1>
+                    <h1 className="fw-bold">70,101</h1>
+                    <h5>Happy Customers</h5>
+                </div>
+                <div className="col-md-4">
+                    <h1><i className="fas fa-car"></i></h1>
+                    <h2 className="fw-bold">109</h2>
+                    <h5>Amazing Tours</h5>
+                </div>
+                <div className="col-md-4">
+                    <h1><i className="far fa-comments"></i></h1>
+                    <h2 className="fw-bold">10,876</h2>
+                    <h5>Support Cases</h5>
+                </div>
+            </div>
         </div>
     );
 };

@@ -77,7 +77,7 @@ const PlaceOrder = () => {
                         {errors.email && <span className="error">This field is required</span>}
                         <input className="mb-2 w-75" placeholder="Address" defaultValue="" {...register("address")} />
                         <input className="mb-2 w-75" placeholder="City" defaultValue="" {...register("city")} />
-                        <input className="mb-2 w-75" placeholder="phone number" defaultValue="" {...register("phone")} />
+                        <input className="mb-2 w-75" placeholder="Phone Number" defaultValue="" {...register("phone")} />
 
                         <input className="btn btn-success mb-5 w-50" type="submit" />
                     </form>
