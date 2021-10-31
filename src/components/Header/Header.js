@@ -17,7 +17,7 @@ const Header = () => {
                 sticky="top"
             >
                 <Container>
-                    <Navbar.Brand as={HashLink} to="/home#home">
+                    <Navbar.Brand className="fs-3" as={HashLink} to="/home#home">
                         Tripper
                     </Navbar.Brand>
                     <Navbar.Toggle />
@@ -25,7 +25,7 @@ const Header = () => {
                         <Nav.Link as={HashLink} className="text-white" to="/home#home">
                             Home
                         </Nav.Link>
-                        <Nav.Link as={HashLink} className="text-white" to="/home#services">
+                        <Nav.Link as={HashLink} className="text-white" to="/home#packages">
                             Packages
                         </Nav.Link>
 
@@ -36,7 +36,7 @@ const Header = () => {
                         )}
                         {user.email && (
                             <Nav.Link as={Link} className="text-white" to="/addService">
-                                Add service
+                                Add Package
                             </Nav.Link>
                         )}
                         {user.email && (
@@ -50,7 +50,7 @@ const Header = () => {
                                 className="me-3 text-success fw-bold"
                                 variant="light"
                             >
-                                Log Out
+                                <i className="fas fa-sign-out-alt"></i> Log Out
                             </Button>
                         ) : (
                             <Nav.Link as={Link} className="text-white" to="/login">
@@ -59,7 +59,7 @@ const Header = () => {
                         )}
                         {user.email && (
                             <Navbar.Text>
-                                Welcome!{" "}
+                                Hey Tripper!{" "}
                                 <Link className="text-decoration-none" to="/home">
                                     {" "}
                                     {user?.displayName}

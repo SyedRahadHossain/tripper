@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
-            <div className="bg-success p-3">
+            <div className="bg-success p-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
@@ -46,6 +46,9 @@ const Footer = () => {
                                 </NavLink>
                                 <NavLink className="fs-6 text-white" to="/home">
                                     Packages
+                                </NavLink>
+                                <NavLink className="fs-6 text-white" to="/home">
+                                    About us
                                 </NavLink>
                             
                             </div>

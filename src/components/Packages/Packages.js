@@ -11,14 +11,17 @@ const Packages = () => {
 
 
     useEffect(() => {
-        fetch("https://rocky-reef-46271.herokuapp.com/services")
+        fetch("https://ghostly-shadow-66375.herokuapp.com/packages")
             .then((res) => res.json())
             .then((data) => {
                 setPackages(data);
                 console.log(data)
-            });
+            })
+            .catch(err => {
+                throw new Error(err)
+              })
     }, []);
-    
+
     if (isLoading) {
         return <Spinner animation="border" variant="success" />;
     }
